@@ -1,7 +1,7 @@
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import Lecutre from "./Lecture";
 
-@Entity("teacher")
+@Entity("teachers")
 class Teacher {
 	@PrimaryGeneratedColumn()
 	teacher_id : number;

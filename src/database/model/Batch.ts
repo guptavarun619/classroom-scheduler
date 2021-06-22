@@ -1,7 +1,7 @@
 import { Column, Entity, JoinTable, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import Lecutre from "./Lecture";
 
-@Entity("batch")
+@Entity("batches")
 class Batch {
 	@PrimaryGeneratedColumn()
 	batch_id: number; 

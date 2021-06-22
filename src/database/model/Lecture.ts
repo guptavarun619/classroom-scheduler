@@ -7,7 +7,7 @@ import {
 import Teacher from "./Teacher";
 import Batch from "./Batch";
 
-@Entity()
+@Entity("lectures")
 class Lecutre {
 	@PrimaryGeneratedColumn()
 	lecture_id: number;
