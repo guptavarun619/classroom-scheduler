@@ -4,11 +4,11 @@ import { SuccessResponse } from "../../../core/ApiResponse";
 import BatchRepo from "../../../database/repository/Batch";
 import asyncHandler from "../../../utils/asyncHandler";
 
-export const getModelByUuid = asyncHandler(
+export const getModelByBatchId = asyncHandler(
 	async (req: Request, res: Response, next: NextFunction) => {
-		const uuid = req.params.uuid;
+		const batch_id = req.params.batch_id;
 		const bRepo = getCustomRepository(BatchRepo);
-		const batch = bRepo.getModelByBatchId(uuid);
+		const batch = bRepo.getModelByBatchId(batch_id);
 		new SuccessResponse("success", batch).send(res);
 	}
 );
